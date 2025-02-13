@@ -1,74 +1,74 @@
 .footer {
-  background-color: rgb(245, 245, 247);
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  padding: var(--padding-small) 220px;
-}
-
-.disclaimer {
-  color: rgba(0, 0, 0, 0.56);
-  max-width: calc(100vw - 440px);
-  text-wrap: auto;
-  font-size: 12px;
-  line-height: 1.3333733333;
-  font-weight: 400;
-  padding-bottom: 15px;
-  border-bottom: 1px rgba(0, 0, 0, 0.16) solid;
-}
-
-.links {
+    background-color: rgb(245, 245, 247);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--padding-small) 5%;
+    box-sizing: border-box;
+  }
+  
+  .disclaimer {
+    color: rgba(0, 0, 0, 0.56);
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 1px rgba(0, 0, 0, 0.16) solid;
+  }
+  
+  .links {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: calc(100vw - 440px);
+    max-width: 100%;
     justify-content: space-between;
     border-bottom: 1px rgba(0, 0, 0, 0.16) solid;
-} 
-
-.links ul {
+  }
+  
+  .links ul {
     margin: 0;
     padding: 0;
     flex-direction: row;
     height: min-content;
-}
-
-.column {
+  }
+  
+  .column {
     height: max-content;
     flex-wrap: nowrap;
-    flex-basis: 25%;
     line-height: 16px;
-}
-
-.links details summary {
+  }
+  
+  .links details summary {
     list-style: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
-
-.heading {
+  }
+  
+  .heading {
     color: rgba(0, 0, 0, 0.88);
     font-size: 12px;
     font-weight: 600;
     margin-bottom: .8em;
-}
-
-.link {
+  }
+  
+  .link {
     margin-bottom: .8em;
-}
-
-.link a {
+  }
+  
+  .link a {
     color: rgba(0, 0, 0, 0.72);
     font-size: 12px;
     font-weight: 400;
-}
-
-.link a:hover {
+  }
+  
+  .link a:hover {
     text-decoration: underline;
-}
-
-.footNote {
+  }
+  
+  .footNote {
     background-color: #f5f5f7;
     padding: 20px 0;
     text-align: center;
@@ -76,55 +76,90 @@
     font-size: 12px;
     line-height: 1.33337;
     animation: fadeIn 0.5s ease-in-out;
-}
-
-.footNote p {
+  }
+  
+  .footNote p {
     margin: 0;
     color: rgba(0, 0, 0, 0.56);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    max-width: max-content;
-}
-
-.footNote a {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footNote a {
     color: rgba(0, 0, 0, 0.72);
     text-decoration: none;
-    margin: 0 8px;
+    margin: 5px;
     transition: color 0.3s ease;
-}
-
-.footNote a:hover {
+  }
+  
+  .footNote a:hover {
     color: #000000;
     text-decoration: underline;
-}
-
-.more {
-    margin-left: 150px;
-}
-
-.country {
-    margin-left: 150px;
-}
-
-@keyframes fadeIn {
+  }
+  
+  .more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .country {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(10px);
+      opacity: 0;
+      transform: translateY(10px);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-@media (max-width: 767px) {
-    .footNote {
-        padding: 15px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: var(--padding-small) 3%;
     }
-
-    .footNote a {
-        display: inline-block;
-        margin: 5px 8px;
+  
+    .links {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-}
+  
+    .footNote p {
+      flex-direction: column;
+    }
+  
+    .more {
+      margin-top: 10px;
+    }
+  
+    .country {
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .links {
+      grid-template-columns: 1fr;
+    }
+  
+    .column {
+      margin-bottom: 20px;
+    }
+  
+    .heading {
+      cursor: pointer;
+    }
+  
+    .links details:not([open]) ul {
+      display: none;
+    }
+  }
+  
