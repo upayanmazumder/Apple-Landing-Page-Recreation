@@ -144,7 +144,20 @@ const Footer = () => {
                 </div>
             </div>
             <div className={footerStyles.footNote}>
-
+                <p>
+                    Copyright © 2025 Apple Inc. All rights reserved.
+                    <div className={footerStyles.more}>
+                        <a>Privacy Policy</a> 
+                        <a>Terms of Use</a> 
+                        <a>Sales</a> 
+                        <a>Policy</a> 
+                        <a>Legal</a> 
+                        <a>Site Map</a>
+                    </div>
+                    <a className={footerStyles.country}>
+                        India
+                    </a>
+                </p>
             </div>
         </footer>
     );

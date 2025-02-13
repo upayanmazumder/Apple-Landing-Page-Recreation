@@ -123,6 +123,8 @@ a {
 
 a:hover {
   color: var(--text-link-hover-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 ul {

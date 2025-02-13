@@ -7,28 +7,37 @@
 }
 
 .disclaimer {
-  font-size: 12px;
   color: rgba(0, 0, 0, 0.56);
   max-width: calc(100vw - 440px);
   text-wrap: auto;
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  padding-bottom: 15px;
+  border-bottom: 1px rgba(0, 0, 0, 0.16) solid;
 }
 
 .links {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: calc(100vw - 440px);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    max-width: calc(100vw - 440px);
     justify-content: space-between;
-}
+    border-bottom: 1px rgba(0, 0, 0, 0.16) solid;
+} 
 
 .links ul {
     margin: 0;
     padding: 0;
+    flex-direction: row;
+    height: min-content;
 }
 
 .column {
     height: max-content;
     flex-wrap: nowrap;
+    flex-basis: 25%;
+    line-height: 16px;
 }
 
 .links details summary {
@@ -42,6 +51,11 @@
     color: rgba(0, 0, 0, 0.88);
     font-size: 12px;
     font-weight: 600;
+    margin-bottom: .8em;
+}
+
+.link {
+    margin-bottom: .8em;
 }
 
 .link a {
@@ -52,4 +66,65 @@
 
 .link a:hover {
     text-decoration: underline;
+}
+
+.footNote {
+    background-color: #f5f5f7;
+    padding: 20px 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 1.33337;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.footNote p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.56);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: max-content;
+}
+
+.footNote a {
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.footNote a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.more {
+    margin-left: 150px;
+}
+
+.country {
+    margin-left: 150px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .footNote {
+        padding: 15px 0;
+    }
+
+    .footNote a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
 }
