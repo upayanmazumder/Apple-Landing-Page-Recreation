@@ -17,4 +17,39 @@
     display: flex;
     flex-wrap: wrap;
     max-width: calc(100vw - 440px);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    height: max-content;
+    flex-wrap: nowrap;
+}
+
+.links details summary {
+    list-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.heading {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.link a {
+    color: rgba(0, 0, 0, 0.72);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.link a:hover {
+    text-decoration: underline;
 }

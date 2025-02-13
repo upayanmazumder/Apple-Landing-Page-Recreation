@@ -66,7 +66,7 @@ export default function Home() {
             display: 'block',
             position: 'relative',
             width: '100%',
-            height: '90vh',
+            height: '100vh',
           }}
         >
           <Image
@@ -114,7 +114,7 @@ export default function Home() {
             display: 'block',
             position: 'relative',
             width: '100%',
-            height: '90vh',
+            height: '100vh',
           }}
         >
           <Image

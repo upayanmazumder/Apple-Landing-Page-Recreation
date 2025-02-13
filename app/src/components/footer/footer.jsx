@@ -22,111 +22,126 @@ const Footer = () => {
                 Features are subject to change. Some features, applications and services may not be available in all regions or all languages.
             </p>
             <div className={footerStyles.links}>
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>Shop and Learn</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Store</a></li>
-                        <li><a className={footerStyles.link} href="#">Mac</a></li>
-                        <li><a className={footerStyles.link} href="#">iPad</a></li>
-                        <li><a className={footerStyles.link} href="#">iPhone</a></li>
-                        <li><a className={footerStyles.link} href="#">AirPods</a></li>
-                        <li><a className={footerStyles.link} href="#">TV & Home</a></li>
-                        <li><a className={footerStyles.link} href="#">AirTag</a></li>
-                        <li><a className={footerStyles.link} href="#">Accessories</a></li>
-                        <li><a className={footerStyles.link} href="#">Gift Cards</a></li>
-                        <li><a className={footerStyles.link} href="#">Store</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Wallet</a></li>
-                        <li><a className={footerStyles.link} href="#">Wallet</a></li>
-                    </ul>
-                </details>
+                <div className={footerStyles.column}>
+                    <details open>
+                        <summary className={footerStyles.heading}>Shop and Learn</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Store</a></li>
+                            <li className={footerStyles.link}><a href="#">Mac</a></li>
+                            <li className={footerStyles.link}><a href="#">iPad</a></li>
+                            <li className={footerStyles.link}><a href="#">iPhone</a></li>
+                            <li className={footerStyles.link}><a href="#">AirPods</a></li>
+                            <li className={footerStyles.link}><a href="#">TV & Home</a></li>
+                            <li className={footerStyles.link}><a href="#">AirTag</a></li>
+                            <li className={footerStyles.link}><a href="#">Accessories</a></li>
+                            <li className={footerStyles.link}><a href="#">Gift Cards</a></li>
+                            <li className={footerStyles.link}><a href="#">Store</a></li>
+                        </ul>
+                    </details>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>Account</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Manage Your Apple Account</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Store Account</a></li>
-                        <li><a className={footerStyles.link} href="#">iCloud.com</a></li>
-                    </ul>
-                </details>
+                    <details open>
+                        <summary className={footerStyles.heading}>Apple Wallet</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Wallet</a></li>
+                        </ul>
+                    </details>
+                </div>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>Entertainment</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Apple One</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple TV+</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Music</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Arcade</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Podcasts</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Books</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Store</a></li>
-                    </ul>
-                </details>
+                <div className={footerStyles.column}>
+                    <details open>
+                        <summary className={footerStyles.heading}>Account</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Manage Your Apple Account</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Store Account</a></li>
+                            <li className={footerStyles.link}><a href="#">iCloud.com</a></li>
+                        </ul>
+                    </details>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>Apple Store</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Find a Store</a></li>
-                        <li><a className={footerStyles.link} href="#">Genius Bar</a></li>
-                        <li><a className={footerStyles.link} href="#">Today at Apple</a></li>
-                        <li><a className={footerStyles.link} href="#">Group Reservations</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Camp</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Trade In</a></li>
-                        <li><a className={footerStyles.link} href="#">Ways to Buy</a></li>
-                        <li><a className={footerStyles.link} href="#">Recycling Programme</a></li>
-                        <li><a className={footerStyles.link} href="#">Order Status</a></li>
-                        <li><a className={footerStyles.link} href="#">Shopping Help</a></li>
-                    </ul>
-                </details>
+                    <details open>
+                        <summary className={footerStyles.heading}>Entertainment</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Apple One</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple TV+</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Music</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Arcade</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Podcasts</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Books</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Store</a></li>
+                        </ul>
+                    </details>
+                </div>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>For Business</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Apple and Business</a></li>
-                        <li><a className={footerStyles.link} href="#">Shop for Business</a></li>
-                    </ul>
-                </details>
+                <div className={footerStyles.column}>
+                    <details open>
+                        <summary className={footerStyles.heading}>Apple Store</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Find a Store</a></li>
+                            <li className={footerStyles.link}><a href="#">Genius Bar</a></li>
+                            <li className={footerStyles.link}><a href="#">Today at Apple</a></li>
+                            <li className={footerStyles.link}><a href="#">Group Reservations</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Camp</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Trade In</a></li>
+                            <li className={footerStyles.link}><a href="#">Ways to Buy</a></li>
+                            <li className={footerStyles.link}><a href="#">Recycling Programme</a></li>
+                            <li className={footerStyles.link}><a href="#">Order Status</a></li>
+                            <li className={footerStyles.link}><a href="#">Shopping Help</a></li>
+                        </ul>
+                    </details>
+                </div>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>For Education</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Apple and Education</a></li>
-                        <li><a className={footerStyles.link} href="#">Shop for Education</a></li>
-                        <li><a className={footerStyles.link} href="#">Shop for University</a></li>
-                    </ul>
-                </details>
+                <div className={footerStyles.column}>
+                    <details open>
+                        <summary className={footerStyles.heading}>For Business</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Apple and Business</a></li>
+                            <li className={footerStyles.link}><a href="#">Shop for Business</a></li>
+                        </ul>
+                    </details>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>For Healthcare</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Apple in Healthcare</a></li>
-                        <li><a className={footerStyles.link} href="#">Mac in Healthcare</a></li>
-                        <li><a className={footerStyles.link} href="#">Health on Apple Watch</a></li>
-                    </ul>
-                </details>
+                    <details open>
+                        <summary className={footerStyles.heading}>For Education</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Apple and Education</a></li>
+                            <li className={footerStyles.link}><a href="#">Shop for Education</a></li>
+                            <li className={footerStyles.link}><a href="#">Shop for University</a></li>
+                        </ul>
+                    </details>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>Apple Values</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Accessibility</a></li>
-                        <li><a className={footerStyles.link} href="#">Education</a></li>
-                        <li><a className={footerStyles.link} href="#">Environment</a></li>
-                        <li><a className={footerStyles.link} href="#">Privacy</a></li>
-                        <li><a className={footerStyles.link} href="#">Supply Chain</a></li>
-                    </ul>
-                </details>
+                    <details open>
+                        <summary className={footerStyles.heading}>For Healthcare</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Apple in Healthcare</a></li>
+                            <li className={footerStyles.link}><a href="#">Mac in Healthcare</a></li>
+                            <li className={footerStyles.link}><a href="#">Health on Apple Watch</a></li>
+                        </ul>
+                    </details>
+                </div>
 
-                <details className={footerStyles.column}>
-                    <summary className={footerStyles.heading}>About Apple</summary>
-                    <ul>
-                        <li><a className={footerStyles.link} href="#">Newsroom</a></li>
-                        <li><a className={footerStyles.link} href="#">Apple Leadership</a></li>
-                        <li><a className={footerStyles.link} href="#">Career Opportunities</a></li>
-                        <li><a className={footerStyles.link} href="#">Investors</a></li>
-                        <li><a className={footerStyles.link} href="#">Ethics and Compliance</a></li>
-                        <li><a className={footerStyles.link} href="#">Events</a></li>
-                        <li><a className={footerStyles.link} href="#">Contact Apple</a></li>
-                    </ul>
-                </details>
+                <div className={footerStyles.column}>
+                    <details open>
+                        <summary className={footerStyles.heading}>Apple Values</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Accessibility</a></li>
+                            <li className={footerStyles.link}><a href="#">Education</a></li>
+                            <li className={footerStyles.link}><a href="#">Environment</a></li>
+                            <li className={footerStyles.link}><a href="#">Privacy</a></li>
+                            <li className={footerStyles.link}><a href="#">Supply Chain</a></li>
+                        </ul>
+                    </details>
+
+                    <details open>
+                        <summary className={footerStyles.heading}>About Apple</summary>
+                        <ul>
+                            <li className={footerStyles.link}><a href="#">Newsroom</a></li>
+                            <li className={footerStyles.link}><a href="#">Apple Leadership</a></li>
+                            <li className={footerStyles.link}><a href="#">Career Opportunities</a></li>
+                            <li className={footerStyles.link}><a href="#">Investors</a></li>
+                            <li className={footerStyles.link}><a href="#">Ethics and Compliance</a></li>
+                            <li className={footerStyles.link}><a href="#">Events</a></li>
+                            <li className={footerStyles.link}><a href="#">Contact Apple</a></li>
+                        </ul>
+                    </details>
+                </div>
             </div>
             <div className={footerStyles.footNote}>
 
