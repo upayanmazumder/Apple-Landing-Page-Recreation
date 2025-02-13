@@ -1,6 +1,7 @@
 .button {
     background-color: #0071e3;
     color: white;
+    text-wrap: nowrap;
 }
 
 .button:hover {
