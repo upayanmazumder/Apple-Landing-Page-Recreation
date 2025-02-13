@@ -6,13 +6,13 @@ const Header = () => {
     return (
         <header className={headerStyles.header}>
             <div className={headerStyles.content}>
-                <div className={headerStyles.logo}>
-                    <a href="/">
-                        <BsApple className={headerStyles.icon}/>
-                    </a>
-                </div>
                 <nav className={headerStyles.nav}>
                     <ul>
+                        <div className={headerStyles.logo}>
+                            <a href="/">
+                                <BsApple className={headerStyles.icon}/>
+                            </a>
+                        </div>
                         <li>
                             <a href="#store">
                                 Store
@@ -63,16 +63,18 @@ const Header = () => {
                                 Support
                             </a>
                         </li>
+                        <li>
+                            <a href="#search"> 
+                                <BsSearch />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#cart"> 
+                                <BsBag />
+                            </a>
+                        </li>
                     </ul>
                 </nav>
-                <div className={headerStyles.shop}>
-                    <a href="#search"> 
-                        <BsSearch />
-                    </a>
-                    <a href="#cart"> 
-                        <BsBag />
-                    </a>
-                </div>
             </div>
         </header>
     );
