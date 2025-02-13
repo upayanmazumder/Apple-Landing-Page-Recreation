@@ -103,6 +103,10 @@ main {
   flex-direction: column;
 }
 
+section {
+  height: 100vh;
+}
+
 h1,
 h2,
 h3,

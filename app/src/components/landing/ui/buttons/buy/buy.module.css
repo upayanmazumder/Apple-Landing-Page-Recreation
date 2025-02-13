@@ -1,0 +1,6 @@
+.button {
+    border: 1px rgb(41, 151, 255) solid;
+    background-color: transparent;
+    padding: 11px 21px;
+    color: rgb(41, 151, 255);
+}
