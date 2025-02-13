@@ -22,7 +22,44 @@ const Footer = () => {
                 Features are subject to change. Some features, applications and services may not be available in all regions or all languages.
             </p>
             <div className={footerStyles.links}>
-                
+                <ul className={footerStyles.column}>
+                    <li>
+                        <h3>
+                            Shop and Learn
+                        </h3>
+                    </li>
+                    <li>
+                        <a href="#">Store</a>
+                    </li>
+                    <li>
+                        <a href="#">Mac</a>
+                    </li>
+                    <li>
+                        <a href="#">iPad</a>
+                    </li>
+                    <li>
+                        <a href="#">iPhone</a>
+                    </li>
+                    <li>
+                        <a href="#">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="#">TV & Home</a>
+                    </li>
+                    <li>
+                        <a href="#">AirTag</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                    <li>
+                        <a href="#">Store</a>
+                    </li>
+                    
+                </ul>
             </div>
             <div className={footerStyles.footNote}>
 
