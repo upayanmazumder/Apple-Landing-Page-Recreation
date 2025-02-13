@@ -142,6 +142,7 @@ button {
 button:hover {
   background-color: rgb(22, 22, 22);
   box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.24);
+  cursor: pointer;
 }
 
 button svg {

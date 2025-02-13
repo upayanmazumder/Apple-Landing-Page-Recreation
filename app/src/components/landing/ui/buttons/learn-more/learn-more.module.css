@@ -2,3 +2,8 @@
     background-color: #0071e3;
     color: white;
 }
+
+.button:hover {
+    background-color: rgb(0, 113, 227);
+    box-shadow: none;
+}
