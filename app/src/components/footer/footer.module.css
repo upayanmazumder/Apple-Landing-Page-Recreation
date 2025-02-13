@@ -1,0 +1,14 @@
+.footer {
+    background-color: rgb(245, 245, 247);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: var(--padding-small) 220px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.56);
+    max-width: calc(100vw - 440px);
+    text-wrap: auto;
+}
