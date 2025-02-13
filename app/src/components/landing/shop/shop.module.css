@@ -1,0 +1,25 @@
+.shop {
+    margin-top: 35px;
+    padding: 5px 0;
+    height: 45px;
+    background-color: #1D1D1F !important;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.shop p {
+    margin: 0;
+    padding: 16px 0;
+}
+
+.shop p a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.symbol {
+    text-decoration: underline;
+    text-underline-offset: -3px;
+}

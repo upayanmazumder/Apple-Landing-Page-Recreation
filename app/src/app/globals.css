@@ -10,7 +10,7 @@
   --footer-background-color: #1f1f1f34;
   --sidebar-background-color: #29292980;
 
-  --screen-horizontal-margin: 200px;
+  --screen-horizontal-margin: 0;
   --screen-vertical-margin: calc(var(--screen-horizontal-margin)/4);
 
   --primary-color: #0f73f5;
