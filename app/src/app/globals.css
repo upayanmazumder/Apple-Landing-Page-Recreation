@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'RedHatDisplay';
-  src: url('../../public/fonts/RedHatDisplay-VariableFont_wght.ttf') format(' truetype');
+  font-family: 'SF Pro Display';
+  src: url('../../public/fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
 
 }
 
@@ -93,7 +93,7 @@ body {
   transition: var(--body-background-color);
   padding: 0;
   margin: 0;
-  font-family: "Red Hat Display", "din alternate", system-ui, optima, avenir;
+  font-family: "SF Pro Display", "din alternate", system-ui, optima, avenir;
 }
 
 main {
@@ -143,28 +143,4 @@ button:hover {
 button svg {
   margin: 0;
   padding: 0;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1e1e1e;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #444444;
-  border-radius: 4px;
-  border: 2px solid #1e1e1e;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #666666;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #888888;
 }
